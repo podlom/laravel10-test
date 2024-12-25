@@ -26,4 +26,4 @@ Route::get('/server-time', function () {
     ]);
 });
 
-Route::get('days-since-war', [DaysSinceWarController::class, 'daysSinceWar']);
+Route::get('/days-since', DaysSinceWarController::class);
