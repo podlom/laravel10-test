@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DaysSinceWarController;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,5 @@ Route::get('/server-time', function () {
         'server_time' => Carbon::now('Europe/Kyiv')->toDateTimeString(),
     ]);
 });
+
+Route::get('days-since-war', [DaysSinceWarController::class, 'daysSinceWar']);
