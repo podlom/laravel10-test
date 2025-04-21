@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DaysWorkNpdController;
 use App\Http\Controllers\DaysSinceWarController;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -27,3 +28,4 @@ Route::get('/server-time', function () {
 });
 
 Route::get('/days-since-war', DaysSinceWarController::class);
+Route::get('/days-worked-in-npd', DaysWorkNpdController::class);
